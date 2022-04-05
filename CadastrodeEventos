@@ -1,0 +1,31 @@
+//Cadastro de Eventos Savinis
+
+//Se a data for menor que hoje, cadastro não permitido
+let dataEvento
+let datadeHoje
+
+if (dataEvento<datadeHoje) {
+console.log ('Cadastro de evento, não permitido, pois a data já passou!')
+} else {
+    ('Cadastro realizado com sucesso!')
+}
+
+//Cadastro de participante, permitir apenas maiores de 18a
+let idade 
+
+if (idade <=18){
+    console.log ('Cadastro efetuado com sucesso!')
+} else {
+    console.log ('Não são permitidos menores de 18 anos no evento!')
+}
+
+//Listar partcipantes do evento e enquanto o número for menor que 100, permitir cadastro
+var listaDeParticipantes = "Maria , João , Pedro , Karol , Jose , Caique"
+
+
+if (listaDeParticipantes.length <= 100) {
+    console.log('Lista de Participantes:', listaDeParticipantes)
+    console.log('Ainda há lugar disponivel!');
+}else{
+    console.log('Evento lotado!');
+}
